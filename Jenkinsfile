@@ -37,6 +37,11 @@ pipeline
      	}
 	}
 
+	stage('Docker Build and push')
+	{
+		
+	}
+
 	 
 }
 }
