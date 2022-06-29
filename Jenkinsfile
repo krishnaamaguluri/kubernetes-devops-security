@@ -41,8 +41,12 @@ pipeline
 	{
 		steps
 		{
-			sh "printenv"
+			withDockerRegistry([credentialsId: "docker-hub", url: ""]) 
+			{
+				sh "printenv"
+			}
 		}
+
 	}
 
 	 
