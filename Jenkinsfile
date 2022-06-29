@@ -39,7 +39,10 @@ pipeline
 
 	stage('Docker Build and push')
 	{
-		
+		steps
+		{
+			sh "printenv"
+		}
 	}
 
 	 
